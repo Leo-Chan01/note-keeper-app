@@ -1,2 +1,9 @@
-# note-keeper-app
-Android NoteKeeperApp with Kotlin
+# Note Keeper App
+
+## Table Of Contents
+
+## Usage
+
+### Not a Developer
+to App build folder
+
