@@ -1,27 +1,25 @@
 package com.raym.notekeeper
 
+import android.content.Intent
 import android.os.Bundle
+import android.widget.ArrayAdapter
 import androidx.appcompat.app.AppCompatActivity
-import androidx.navigation.ui.AppBarConfiguration
-import com.google.android.material.snackbar.Snackbar
-import com.raym.notekeeper.databinding.ActivityNoteListBinding
+import kotlinx.android.synthetic.main.activity_note_list.*
+import kotlinx.android.synthetic.main.content_note_list.*
 
 class NoteListActivity : AppCompatActivity() {
 
-    private lateinit var appBarConfiguration: AppBarConfiguration
-    private lateinit var binding: ActivityNoteListBinding
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        setContentView(R.layout.activity_note_list)
+        setSupportActionBar(toolbar)
 
-        binding = ActivityNoteListBinding.inflate(layoutInflater)
-        setContentView(binding.root)
-
-        setSupportActionBar(binding.toolbar)
-
-        binding.fab.setOnClickListener { view ->
-            Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                .setAction("Action", null).show()
+        fab.setOnClickListener { view ->
+            val activityIntent = Intent(this, MainActivity::class.java)
+            startActivity(activityIntent)
         }
+
+        listNotes.adapter = ArrayAdapter(this, android.R.layout.simple_list_item_1, DataManager.notes)
+
     }
 }
