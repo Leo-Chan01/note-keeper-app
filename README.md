@@ -4,6 +4,6 @@
 
 ## Usage
 
-### Not a Developer
-to App build folder
+### If you are not a Developer
+* Head to App build folder
 
