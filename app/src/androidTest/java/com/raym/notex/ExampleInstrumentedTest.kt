@@ -1,4 +1,4 @@
-package com.raym.notekeeper
+package com.raym.notex
 
 import androidx.test.platform.app.InstrumentationRegistry
 import androidx.test.ext.junit.runners.AndroidJUnit4
@@ -19,6 +19,6 @@ class ExampleInstrumentedTest {
     fun useAppContext() {
         // Context of the app under test.
         val appContext = InstrumentationRegistry.getInstrumentation().targetContext
-        assertEquals("com.raym.notekeeper", appContext.packageName)
+        assertEquals("com.raym.notex", appContext.packageName)
     }
 }

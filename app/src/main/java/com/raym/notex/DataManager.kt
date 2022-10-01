@@ -1,4 +1,4 @@
-package com.raym.notekeeper
+package com.raym.notex
 
 object DataManager {
     val courses = HashMap<String, CourseInfo>()

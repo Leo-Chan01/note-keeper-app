@@ -1,4 +1,4 @@
-package com.raym.notekeeper
+package com.raym.notex
 
 import org.junit.Test
 

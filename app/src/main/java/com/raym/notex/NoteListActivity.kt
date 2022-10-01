@@ -1,4 +1,4 @@
-package com.raym.notekeeper
+package com.raym.notex
 
 import android.content.Intent
 import android.os.Bundle
@@ -21,5 +21,8 @@ class NoteListActivity : AppCompatActivity() {
 
         listNotes.adapter = ArrayAdapter(this, android.R.layout.simple_list_item_1, DataManager.notes)
 
+        listNotes.setOnItemClickListener{parent, view, position, id ->
+
+        }
     }
 }

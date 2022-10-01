@@ -1,4 +1,4 @@
-package com.raym.notekeeper
+package com.raym.notex
 
 import android.os.Bundle
 import android.view.Menu
